@@ -1,0 +1,20 @@
+#include<stdio.h>
+int factorial(int n);
+int factorial(int n)
+{
+ int result=1;
+ while(n==0){
+    return result;
+ }
+ result=n*factorial(n-1);
+ return result;
+}
+int main()
+{
+
+    int p;
+    printf("enter the number");
+    scanf("%d",&p);
+    printf("the factorial of %d is %d",p,factorial(p));
+    return 0;
+}
